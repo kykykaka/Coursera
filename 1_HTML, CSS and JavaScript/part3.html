@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Dating Web Site Assessment</title>
+    <style>
+   H1 { 
+    font-size: 120%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+   }
+   FIELDSET {
+    width: 720px;
+    background: lightyellow;
+    border:10px;
+    border-style:solid;
+    border-color: yellow;
+    margin-bottom:10px;
+   }
+   LABEL {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    text-align: top;
+
+   }
+  .btn {
+    width: auto;
+   }
+
+   TEXTAREA {
+    width: 360px;
+    height: 50px;
+   }
+   label:hover { 
+    font-size:120%;
+   }
+   input:hover {
+    font-size:120%;
+   }
+
+
+  </style>
+   </head>
+ <body>
+ <h1>Please Enter Your Details For Our Dating Website!</h1>
+
+  <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+  <fieldset>
+   <legend>Your face</legend>
+      <label for="avatar">Your image:</label>
+      <input type="file" id="avatar" name="avatar" required=""><br>
+      <label for="preview">Image preview:</label>
+      <img src="" id="preview">
+  </fieldset>
+  
+  <fieldset>
+   <legend>Your general details</legend>
+   <label for="name">Name:</label>
+    <input type="text" id="name" required="" placeholder="Your full name"><br>
+   <label for="gender">Gender:</label>
+    <input class="btn" type="radio" id="gender" required="" name="gender"> Male
+    <input class="btn" type="radio" id="gender" required="" name="gender"> Female<Br>
+
+   <label for="age">Age:</label>
+    <input type="number" id="age" required=""><br>
+
+   <label for="date">Date of birth:</label>
+    <input type="date" id="date" ><br>
+
+   <label for="color">Favorite color:</label>
+    <input type="color" id="color" ><br>
+
+    <label for="country">Which country:</label>
+    <select id="country">
+     <option value=""></option>
+     <option value="Moscow">Moscow</option>
+     <option value="NY">NY</option>
+     <option value="London">London</option>
+     <option value="Berlin">Berlin</option>
+    </select>
+     
+  </fieldset>
+  <fieldset>
+   <legend>Your indicators</legend>
+   <label for="height">Height:</label>
+     Short<input type="range" min="0" max="100" id="height">Tail<br>
+   <label for="salary">Salary:</label>
+     Poor<input type="range" min="0" max="100" id="salary">Rich<br>
+
+
+  </fieldset>
+  <fieldset>
+   <legend>Your Contact Information</legend>
+   <label for="email">Email:</label>
+    <input type="email" id="email" required=""><br>  
+   <label for="mob">Mobile:</label>
+    <input type="tel" id="mob" required=""><br>
+    <label for="textarea">Address:</label>
+    <textarea id="textarea"></textarea><br>
+    <label>Method to contact you:</label>
+    <input type="checkbox" id="Email"><label class="btn" for="check1">Email</label>
+    <input type="checkbox" id="Whatsapp"><label class="btn" for="check2">Whatsapp</label>
+    <input type="checkbox" id="In-app"><label class="btn" for="check3">In-app chat</label>
+  </fieldset>
+
+    <button type="submit" formmethod="post" >Submit</button>
+  </form>
+  
+ 
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+ </body>
+</html>
